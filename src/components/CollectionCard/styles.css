@@ -1,0 +1,70 @@
+.collection-card__image {
+    width: 55% !important;
+}
+
+.collection-card__title {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.collection-card__description {
+    font-size: .96rem;
+    line-height: 1.5rem;
+}
+
+@media screen  and (min-width: 576px) {
+    .collection-card {
+        align-items: stretch;
+        background-color: transparent;
+        flex-direction: row;
+    }
+
+    .collection-card__image {
+        width: 38% !important;
+    }
+
+    .collection-card__body {
+        align-items: flex-start;
+        padding: .5rem 0 0 0;
+    }
+    
+    .collection-card__title {
+        font-family: 'Fraunces', serif;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    
+    .collection-card__description {
+        margin-top: 1rem;
+        text-align: left !important;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .collection-card {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .collection-card__body {
+        align-items: center;
+        padding: .5rem 0 0 0;
+    }
+
+    .collection-card__description {
+        margin-top: 1rem;
+        text-align: center !important; 
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .collection-card__image {
+        width: 65% !important;
+    }
+
+    .collection-card__body {
+        margin-top: 1rem;
+        padding: .5rem 0 0 0;
+    }
+}
