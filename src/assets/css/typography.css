@@ -6,6 +6,9 @@
     font-family: 'Fraunces', serif;
 }
 
+.opacity-9 {
+    opacity: .9;
+}
 .opacity-8 {
     opacity: .8;
 }
