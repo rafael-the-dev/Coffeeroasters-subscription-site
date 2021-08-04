@@ -3,9 +3,7 @@
 }
 
 .collection-card__title {
-    font-family: 'Fraunces', serif;
     font-size: 1.5rem;
-    font-weight: 900;
 }
 
 .collection-card__description {
@@ -14,47 +12,40 @@
 }
 
 @media screen  and (min-width: 576px) {
-    .collection-card {
-        align-items: stretch;
-        background-color: transparent;
-        flex-direction: row;
-    }
 
     .collection-card__image {
         width: 38% !important;
     }
 
     .collection-card__body {
-        align-items: flex-start;
-        padding: .5rem 0 0 0;
+        padding: 2rem 0 0 0;
     }
     
     .collection-card__title {
-        font-family: 'Fraunces', serif;
         font-size: 1.5rem;
-        font-weight: 900;
     }
     
+    .collection-card__description, .collection-card__title {
+        text-align: left !important;
+    }
+
     .collection-card__description {
         margin-top: 1rem;
-        text-align: left !important;
     }
 }
 
-@media screen and (min-width: 768px){
-    .collection-card {
-        align-items: center;
-        flex-direction: column;
-    }
+@media screen and (min-width: 768px) {
 
     .collection-card__body {
-        align-items: center;
         padding: .5rem 0 0 0;
     }
 
-    .collection-card__description {
-        margin-top: 1rem;
+    .collection-card__description, .collection-card__title {
         text-align: center !important; 
+    }
+
+    .collection-card__description {
+        width: 80%;
     }
 }
 
@@ -66,5 +57,11 @@
     .collection-card__body {
         margin-top: 1rem;
         padding: .5rem 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .collection-card__description {
+        width: 95%;
     }
 }

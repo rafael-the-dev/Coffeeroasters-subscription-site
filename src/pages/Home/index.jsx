@@ -92,7 +92,7 @@ const Home = () => {
                     </Row>
                     <div className="w-100 start-0 d-block rounded-3 top-0 position-absolute services__background"></div>
                 </Container>
-                <Container as="section" fluid className="py-5 align-items-sm-start align-center  d-flex flex-column instructions">
+                <Container as="section" fluid className="py-5 align-items-sm-start align-items-center  d-flex flex-column instructions">
                     <h2 className="text-center font-weight-9 opacity-9 font-fraunces instructions__title">How it works</h2>
                     <Row className="mt-4 w-100 line-container">
                         <Col sm={4} className="position-relative">
