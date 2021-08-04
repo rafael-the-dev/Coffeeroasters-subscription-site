@@ -152,7 +152,7 @@
     .instructions__line {
         background-color: #FDD6BA;
         height: 2px;
-        left: 4%;
+        left: 6%;
         top: 40%;
         width: 99%;
         z-index: -1;
@@ -206,6 +206,10 @@
     
     .instructions {
         margin-top: 4rem;
+    }
+
+    .instructions__title {
+        margin-bottom: 3rem !important;
     }
 
     .instructions__link {
