@@ -13,25 +13,24 @@ const Home = () => {
         <>
             <Header />
             <Container as="main" fluid className="main">
-                <Container as="section" fluid>
-                    <Row className="rounded-3 home-hero">
-                        <Col xs={12} sm={6} lg={5} xl={4} className="flex flex-column justify-center text-white align-center
-                            align-items-sm-start text-center home-hero__content" >
-                            <h1 className="display-1 home-hero__title">
-                                Great coffee<br/>made simple
-                            </h1>
-                            <p className="opacity-75 mt-3 home-hero__description">
-                                Start your mornings with the world’s best coffees. Try our expertly curated artisan 
-                                coffees from our best roasters delivered directly to your door, at your schedule.
-                            </p>
-                            <Link to="/" className="text-white mt-5 rounded-3 text-decoration-none  home-hero__link">
-                                Create your plan
-                            </Link>
-                        </Col>
-                    </Row>
+                <Container as="section" fluid className="rounded-3 bg-cover bg-no-repeat bg-center home-hero d-flex align-items-center
+                ">
+                    <div className="d-flex flex-column justify-center text-white align-items-center
+                        align-items-sm-start text-center home-hero__content" >
+                        <h1 className="display-1 font-weight-9 font-fraunces home-hero__title">
+                            Great coffee<br/>made simple
+                        </h1>
+                        <p className="opacity-75 mt-3 home-hero__description">
+                            Start your mornings with the world’s best coffees. Try our expertly curated artisan 
+                            coffees from our best roasters delivered directly to your door, at your schedule.
+                        </p>
+                        <Link to="/" className="text-white mt-5 font-fraunces rounded-3 text-decoration-none  home-hero__link">
+                            Create your plan
+                        </Link>
+                    </div>
                 </Container>
                 <Container as="section" fluid className="py-5 collections">
-                    <h2 className="text-center collection__title">our collection</h2>
+                    <h2 className="text-center font-weight-9 font-fraunces collection__title">our collection</h2>
                     <Row className="mt-3">
                         <Col xs={12} md={6} lg={3}>
                             <CollectionCard

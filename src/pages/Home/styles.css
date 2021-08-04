@@ -1,13 +1,10 @@
 .home-hero {
     background-image: url('../../assets/images/home/mobile/image-hero-coffeepress.jpg'), linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .4));
-    background-position: center;
-    background-size: cover;
-    height: 480px;
+    height: 85vh;
 }
 
 .home-hero__title {
     color: #FEFCF7;
-    font-weight: 900;
 }
 
 .home-hero__description {
@@ -27,9 +24,7 @@
 .collection__title {
     background: -webkit-linear-gradient(#848990, #83888f96);
     background-clip: text;
-    font-family: 'Fraunces', serif;
     font-size: 2.2rem;
-    font-weight: 900;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
@@ -96,6 +91,7 @@
 
     .home-hero__content {
         margin-left: 5%;
+        width: 68%;
     }
 
     .home-hero__title, .home-hero__description {
@@ -170,8 +166,16 @@
         height: 600px;
     }
 
+    .home-hero__content {
+        width: 50%;
+    }
+
     .home-hero__title {
         font-size: 3rem;
+    }
+
+    .home-hero__description {
+        width: 80%;
     }
 
     .collection__title {
@@ -217,6 +221,14 @@
     .main {
         padding-left: 3%;
         padding-right: 3%;
+    }
+
+    .home-hero__content {
+        width: 40%;
+    }
+
+    .home-hero__description {
+        width: 70%;
     }
 
     .collection__title {
