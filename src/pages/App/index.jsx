@@ -5,13 +5,15 @@ import '../../assets/css/typography.css';
 import '../../assets/css/general.css';
 import Home from '../Home';
 import About from '../About';
+import Subscription from '../Subscription';
 
 function App() {
     //const abountLoadble = loadable()
     return (
         <Router>
             <Switch>
-                <Route path="/about" component={About} />
+                <Route exact path="/subscription" component={Subscription} />
+                <Route exact path="/about" component={About} />
                 <Route path="/" component={Home} /> 
             </Switch>
         </Router>

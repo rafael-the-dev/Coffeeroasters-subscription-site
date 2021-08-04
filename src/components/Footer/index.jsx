@@ -15,10 +15,10 @@ const Footer = () => {
                         <Link to="/" className="text-uppercase text-white text-decoration-none opacity-8 footer__link">Home</Link>
                     </li>
                     <li className="footer__item mb-3">
-                        <Link to="/" className="text-uppercase text-white text-decoration-none opacity-8 footer__link">About us</Link>
+                        <Link to="/about" className="text-uppercase text-white text-decoration-none opacity-8 footer__link">About us</Link>
                     </li>
                     <li className="footer__item">
-                        <Link to="/" className="text-uppercase text-white text-decoration-none opacity-8 footer__link">Create your plan</Link>
+                        <Link to="/plan" className="text-uppercase text-white text-decoration-none opacity-8 footer__link">Create your plan</Link>
                     </li>
                 </ul>
                 <div className="align-items-center justify-center d-flex mt-5 justify-content-md-end flex-md-grow-1 footer__social-media-container">
