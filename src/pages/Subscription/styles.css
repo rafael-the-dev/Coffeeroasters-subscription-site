@@ -1,0 +1,15 @@
+.subscription-hero {
+    background-image: url('../../assets/images/plan/mobile/image-hero-blackcup.jpg');
+}
+
+@media screen and (min-width: 576px) {
+    .subscription-hero {
+        background-image: url('../../assets/images/plan/tablet/image-hero-blackcup.jpg');
+    }
+}
+
+@media screen and (min-width: 768px){
+    .subscription-hero {
+        background-image: url('../../assets/images/plan/desktop/image-hero-blackcup.jpg');
+    }
+}

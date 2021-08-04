@@ -1,0 +1,107 @@
+.bg-steps {
+    background-image: url('../../assets/images/plan/mobile/bg-steps.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4rem;
+    padding-top: 0 !important;
+    z-index: -2;
+}
+
+.instructions__title {
+    font-size: 1.25rem;
+}
+
+.instructions__column:nth-child(1) .instruction-card__title::before {
+    content: '01';
+}
+
+.instructions__column:nth-child(2) .instruction-card__title::before {
+    content: '02';
+}
+
+.instructions__column:nth-child(3) .instruction-card__title::before {
+    content: '03';
+}
+
+.instructions__link {
+    background-color: #0E8784;
+    font-size: .9rem;
+    padding-bottom: .7rem;
+    padding-top: .7rem;
+    text-decoration: none;
+    width: 70%;
+}
+
+@media screen and (min-width: 576px) {
+    .bg-steps {
+        background-image: url('../../assets/images/plan/mobile/bg-steps.png');
+        margin-top: 5rem;
+        padding-top: 2rem !important;
+    }
+
+    .instructions__title, .instructions__link {
+        margin-left: 11px;
+    }
+
+    .instructions__link {
+        width: 40%;
+    }
+
+    .line-container {
+        margin-left: 11px;
+    }
+
+    .instructions__circle {
+        background-color: #FEFCF7;
+        border: 2px solid #0E8784;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        z-index: 2;
+    }
+
+    .instructions__line {
+        background-color: #FDD6BA;
+        height: 2px;
+        left: 6%;
+        top: 40%;
+        width: 99%;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .bg-steps {
+        background-image: url('../../assets/images/plan/desktop/bg-steps.png');
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .instructions {
+        margin-top: 4rem;
+    }
+
+    .bg-steps {
+        margin-top: 7rem;
+    }
+
+    .instructions__title {
+        margin-bottom: 3rem !important;
+    }
+
+    .instructions__link {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .line-container {
+        margin-left: 0;
+    }
+
+    .instructions__link {
+        width: 20%;
+    }
+}

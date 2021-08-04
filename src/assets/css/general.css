@@ -9,3 +9,24 @@
 .bg-center {
     background-position: center;
 }
+
+@media screen and (min-width: 992px) {
+    .main {
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
