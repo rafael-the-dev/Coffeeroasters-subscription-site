@@ -1,0 +1,32 @@
+.default-hero {
+    height: 380px;
+}
+
+.default-hero__title {
+    font-size: 2rem;
+}
+
+.default-hero__description {
+    font-size: .91rem;
+    line-height: 1.5rem;
+}
+
+@media screen and (min-width: 576px) { 
+    .default-hero__title, .default-hero__description {
+        text-align: left !important;
+    }
+
+    .default-hero {
+        padding-left: 5%;
+    }
+
+    .default-hero__content {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) { 
+    .default-hero__content {
+        width: 40%;
+    }
+}
