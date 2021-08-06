@@ -9,8 +9,9 @@ import Subscription from '../Subscription';
 
 function App() {
     //const abountLoadble = loadable()
+
     return (
-        <Router>
+        <Router >
             <Switch>
                 <Route exact path="/plan" component={Subscription} />
                 <Route exact path="/about" component={About} />

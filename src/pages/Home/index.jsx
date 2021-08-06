@@ -7,8 +7,13 @@ import CollectionCard from '../../components/CollectionCard';
 import ServiceCard from '../../components/ServiceCard';
 import Footer from '../../components/Footer';
 import Instructions from '../../components/Instructions';
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [ ]);
+    
     return (
         <>
             <Header />

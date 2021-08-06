@@ -4,8 +4,13 @@ import '../../assets/css/hero.css';
 import './styles.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import AddressCard from '../../components/AddressCard';
+import { useEffect } from 'react';
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [ ]);
+
     return (
         <>
             <Header />

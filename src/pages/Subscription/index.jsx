@@ -8,7 +8,7 @@ import ToggleButton from '../../components/ToggleButton';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import PlanCard from '../../components/PlanCard';
 import TabButton from '../../components/TabButton';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 
 const CoffeeFrequency = React.forwardRef(({ firstCard, secondCard, thirdCard, value, setValue, buttonText, containerId }, ref) => {
     const buttonMemo = useMemo(() => (
@@ -289,6 +289,27 @@ const Subscription = () => {
             </Modal>
         );
      }, [ show, getSummaryText, getTotalPrice, history ]);
+
+     
+    const { pathname, hash } = useLocation();
+
+     useEffect(() => {
+        // if not a hash link, scroll to top
+        console.log(hash)
+        if (hash === '') {
+          window.scrollTo(0, 0);
+        }
+        // else scroll to id
+        else {
+          setTimeout(() => {
+            const id = hash.replace('#', '');
+            const element = document.getElementById(id);
+            if (element) {
+              element.scrollIntoView();
+            }
+          }, 0);
+        }
+      }, [ pathname, hash]);
 
     return (
         <>
