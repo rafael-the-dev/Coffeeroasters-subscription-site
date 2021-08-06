@@ -1,20 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import loadable from '@loadable/component';
 import '../../assets/css/base.css';
 import '../../assets/css/typography.css';
 import '../../assets/css/general.css';
 import Home from '../Home';
-import About from '../About';
-import Subscription from '../Subscription';
 
 function App() {
-    //const abountLoadble = loadable()
+    const AboutComponent = loadable(() => import('../About'));
+    const SubscriptionComponent = loadable(() => import('../Subscription'));
 
     return (
         <Router >
             <Switch>
-                <Route exact path="/plan" component={Subscription} />
-                <Route exact path="/about" component={About} />
+                <Route exact path="/plan" component={SubscriptionComponent} />
+                <Route exact path="/about" component={AboutComponent} />
                 <Route path="/" component={Home} /> 
             </Switch>
         </Router>
