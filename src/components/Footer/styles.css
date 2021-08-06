@@ -16,35 +16,10 @@
     width: 31px;
 }
 
-.footer__link:hover {
-    font-size: 1rem;
-    font-weight: 600;
-    opacity: 1;
-    transition: all 400ms;
-}
-
-@media screen and (min-width: 520px) {
-    .footer__logo-container {
-        height: 35px;
-        width: 56%;
-    }
-}
-
-@media screen and (min-width: 690px) {
-    .footer__logo-container {
-        width: 45%;
-    }
-}
-
 @media screen and (min-width: 768px) {
     .footer__list, .footer__item, .footer__social-media-container {
         margin-bottom: 0 !important;
         margin-top: 0 !important;
-    }
-
-    .footer__division {
-        padding-left: 3%;
-        padding-right: 3%;
     }
 
     .footer__logo-container {
@@ -61,12 +36,8 @@
         margin-right: 1rem;
     }
 
-    .footer__item:last-child {
-        margin-right: 0;
-    }
-
-    .footer__link {
-        font-size: .9rem;
+    .footer__social-media-container {
+        margin-left: 10%;
     }
 }
 
