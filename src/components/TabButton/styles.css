@@ -1,0 +1,28 @@
+.tab-button {
+    border-bottom: 1px solid #979797 !important;
+    color: #83888F;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.tab-button:last-child {
+    border-bottom: none !important;
+}
+
+.tab-button:hover {
+    color: #333D4B;
+    opacity: 1;
+    transition: all 400ms;
+}
+
+/*@media screen and (min-width: 992px) {
+    .tab-button {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .tab-button {
+        width: 70%;
+    }
+}*/

@@ -1,0 +1,36 @@
+.toggle-button:disabled {
+    background-color: rgba(230, 230, 230, 0.3) !important;
+}
+
+.toggle-button__text {
+    color: #83888F;
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.toggle-button__arrow {
+    background-image: url('../../assets/icons/icon-arrow.svg');
+    height: 15px;
+    width: 15px;
+}
+
+.toggle-button:not(.toggle-button--opened) .toggle-button__arrow, .toggle-button:disabled .toggle-button__arrow {
+    transform: rotate(360deg);
+}
+
+.toggle-button .toggle-button__arrow {
+    transform: rotate(180deg);
+}
+
+
+@media screen and (min-width: 576px) {
+    .toggle-button__arrow {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .toggle-button__text {
+        font-size: 1.45rem;
+    }
+}

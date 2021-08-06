@@ -1,0 +1,28 @@
+.primary-bg {
+    background-color: #F4F1EB;
+}
+
+.secondary-bg {
+    background-color: #0E8784;
+}
+
+.plan-card:not(.secondary-bg):hover {
+    background-color: #FDD6BA;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.plan-card__title {
+    color: #333D4B;
+    font-size: 1.3rem;
+}
+
+.plan-card__description {
+    font-size: .95rem;
+}
+
+@media screen and (min-width: 576px) {
+    .plan-card {
+        width: 31% !important;
+    }
+}

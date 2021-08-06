@@ -91,7 +91,7 @@ const Home = () => {
                     </Row>
                     <div className="w-100 start-0 d-block rounded-3 top-0 position-absolute services__background"></div>
                 </Container>
-                <Instructions title="How it works" url="/" />
+                <Instructions title="How it works" url="/plan" />
             </Container>
             <Footer />
         </>

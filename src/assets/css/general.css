@@ -2,6 +2,10 @@
     background-repeat: no-repeat;
 }
 
+.bg-contain {
+    background-size: contain;
+}
+
 .bg-cover {
     background-size: cover;
 }
