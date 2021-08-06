@@ -1,5 +1,5 @@
 .hero {
-    background-image: url('../../assets/images/about/mobile/image-hero-whitecup.jpg'),  linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
+    background-image: url('../../assets/images/about/mobile/image-hero-whitecup.jpg'),  linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
 }
 
 .commitment__image {
@@ -46,7 +46,7 @@
 
 @media screen and (min-width: 576px) {
     .hero {
-        background-image: url('../../assets/images/about/tablet/image-hero-whitecup.jpg'),  linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
+        background-image: url('../../assets/images/about/tablet/image-hero-whitecup.jpg'),  linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
     }
 
     .commitment__image {
@@ -92,7 +92,7 @@
     }
 
     .hero {
-        background-image: url('../../assets/images/about/desktop/image-hero-whitecup.jpg'),  linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
+        background-image: url('../../assets/images/about/desktop/image-hero-whitecup.jpg'),  linear-gradient(to left, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
     }
 
     .commitment {
