@@ -5,16 +5,16 @@ import './styles.css';
 const Header = () => {
     return (
         <Container as="header" fluid className="header">
-            <Navbar expand="xxl" className="justify-content-between" >
+            <Navbar expand="sm" className="justify-content-between" >
                 <Navbar.Brand href="/" className="navbar__brand">
-                    <Image src={logo} fluid alt="Logo" className="h-100"/>
+                    <Image src={logo} fluid alt="Logo" className="d-block h-100"/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar__toggle" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">About</Nav.Link>
-                        <Nav.Link href="#link">Subscription</Nav.Link>
+                        <Nav.Link href="#home" className="font-weight-9 font-fraunces">Home</Nav.Link>
+                        <Nav.Link href="#link" className="font-weight-9 font-fraunces">About</Nav.Link>
+                        <Nav.Link href="#link" className="font-weight-9 font-fraunces">Subscription</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

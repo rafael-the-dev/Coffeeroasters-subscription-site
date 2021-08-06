@@ -2,7 +2,9 @@
     flex-grow: 0 !important;
 }
 .navbar__brand {
-    height: 36px;
+    height: 27px;
+    padding-bottom: 0;
+    padding-top: 0;
     width: 60%;
 }
 
@@ -23,43 +25,55 @@
     box-shadow: none;
 }
 
+.navbar-nav {
+    align-items: center;
+    background-image: linear-gradient( to bottom, #fefcf7, #e2e2e2);
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+    position: absolute;
+    width: 100%;
+}
+
 .nav-link {
     color: #83888F !important;
+    transition: all 400ms;
 }
 
 .nav-link:hover {
-    color: #333D4B;
+    color: #333D4B !important;
+    font-size: 1.05rem;
 }
-/*.show {
-    left: 1%;
-    position: absolute;
-    top: 50px;
-    z-index: 10;
-    background: #000;
-    width: 97%;
-}*/
 
 button:focus:not(:focus-visible) {
     outline: none !important;
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 567px) {
     .header {
-        padding-left: 1.5%;
-        padding-right: 1.5%;
+        padding-left: 5%;
+        padding-right: 3%;
+    }
+
+    .navbar-nav {
+        background-image: none;
+        position: relative;
+        padding-bottom: 0;
+        padding-top: 0;
+        width: auto;
     }
 }
 
+
 @media screen and (min-width: 1200px){
     .header {
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 7%;
+        padding-right: 5%;
     }
 }
 
 @media screen and (min-width: 1400px){
     .header {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 6%;
     }
 }
