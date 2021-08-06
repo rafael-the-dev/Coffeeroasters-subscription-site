@@ -1,0 +1,256 @@
+.home-hero {
+    background-image: url('../../assets/images/home/mobile/image-hero-coffeepress.jpg'), linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .4));
+    height: 85vh;
+}
+
+.home-hero__title {
+    color: #FEFCF7;
+}
+
+.home-hero__description {
+    margin-bottom: 0;
+    opacity: .7;
+}
+
+.home-hero__link {
+    background-color: #0E8784;   
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding-bottom: .8rem;
+    padding-top: .8rem;
+    width: 80%;
+}
+
+.collection__title {
+    background: -webkit-linear-gradient(#848990, #83888f96);
+    background-clip: text;
+    font-size: 2.2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.services__background {
+    background-color: #2C343E;
+    height: 722px;
+    z-index: -1;
+}
+
+.services__title {
+    font-size: 1.4rem;
+}
+
+.services__description {
+    font-size: .96rem;
+    line-height: 1.6rem;
+    opacity: .8;
+}
+
+.services__column:nth-child(1) .service-card__title::before {
+    background-image: url('../../assets/icons/icon-coffee-bean.svg');
+}
+
+.services__column:nth-child(2) .service-card__title::before {
+    background-image: url('../../assets/icons/icon-gift.svg');
+}
+
+.services__column:nth-child(3) .service-card__title::before {
+    background-image: url('../../assets/icons/icon-truck.svg');
+}
+
+.instructions__title {
+    font-size: 1.25rem;
+}
+
+.instructions__column:nth-child(1) .instruction-card__title::before {
+    content: '01';
+}
+
+.instructions__column:nth-child(2) .instruction-card__title::before {
+    content: '02';
+}
+
+.instructions__column:nth-child(3) .instruction-card__title::before {
+    content: '03';
+}
+
+.instructions__link {
+    background-color: #0E8784;
+    font-size: .9rem;
+    padding-bottom: .7rem;
+    padding-top: .7rem;
+    text-decoration: none;
+    width: 70%;
+}
+
+@media screen and (min-width: 576px) {
+    .home-hero {
+        background-image: url('../../assets/images/home/tablet/image-hero-coffeepress.jpg'), linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
+        height: 530px;
+    }
+
+    .home-hero__content {
+        margin-left: 5%;
+        width: 68%;
+    }
+
+    .home-hero__title, .home-hero__description {
+        text-align: left;
+    }
+
+    .home-hero__title {
+        font-size: 2.6rem;
+    }
+
+    .home-hero__link {
+        margin-top: 2rem !important;
+        width: 60%;
+    }
+
+    .collections {
+        padding-top: 1rem;
+    }
+
+    .collection__title {
+        background: -webkit-linear-gradient(#848990b7, #83888f00);
+        background-clip: text;
+        font-size: 4.5rem;
+        transform: translateY(74px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .services {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .services__background {
+        height: 60%;
+    }
+
+    .instructions__title, .instructions__link {
+        margin-left: 11px;
+    }
+
+    .instructions__link {
+        width: 40%;
+    }
+
+    .line-container {
+        margin-left: 11px;
+    }
+
+    .instructions__circle {
+        background-color: #FEFCF7;
+        border: 2px solid #0E8784;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+    }
+
+    .instructions__line {
+        background-color: #FDD6BA;
+        height: 2px;
+        left: 6%;
+        top: 40%;
+        width: 99%;
+        z-index: -1;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .home-hero {
+        background-image: url('../../assets/images/home/desktop/image-hero-coffeepress.jpg'), linear-gradient(to left, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
+        height: 600px;
+    }
+
+    .home-hero__content {
+        width: 50%;
+    }
+
+    .home-hero__title {
+        font-size: 3rem;
+    }
+
+    .home-hero__description {
+        width: 80%;
+    }
+
+    .collection__title {
+        font-size: 6rem;
+    }
+
+    .services__description {
+        margin-left: auto;
+        margin-right: auto;
+        width: 66%;
+    }
+
+    .services__background {
+        height: 69%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .services {
+        padding-top: 3rem !important;
+    }
+
+    .services__title {
+        font-size: 2em;
+        margin-top: 2rem;
+    }
+    
+    .instructions {
+        margin-top: 4rem;
+    }
+
+    .instructions__title {
+        margin-bottom: 3rem !important;
+    }
+
+    .instructions__link {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .home-hero__content {
+        width: 40%;
+    }
+
+    .home-hero__description {
+        width: 70%;
+    }
+
+    .collection__title {
+        font-size: 8rem;
+    }
+
+    .services__title {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .main, .instructions, .collections {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .line-container {
+        margin-left: 0;
+    }
+
+    .instructions__link {
+        width: 20%;
+    }
+}

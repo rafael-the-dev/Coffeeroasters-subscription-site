@@ -1,0 +1,137 @@
+.subscription-hero {
+    background-image: url('../../assets/images/plan/mobile/image-hero-blackcup.jpg'), linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
+}
+
+.toggle-button:not(.toggle-button--opened) + .plan-filter, .toggle-button:disabled + .plan-filter {
+    display: none;
+}
+
+.toggle-button:not(:disabled).toggle-button--opened + .plan-filter {
+    display: flex;
+
+}
+
+.links-sidebar {
+    box-shadow: 4px 8px 18px #00000073;;
+}
+
+.modal-content {
+    background-color: #FEFCF7;
+    width: 90%;
+    margin: 16vh auto 0 auto;
+}
+
+.modal__header, .modal__body {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.modal__header {
+    background-color: #333D4B;
+}
+
+.modal__title {
+    font-size: 1.5rem;
+}
+
+.btn-close {
+    filter: invert(1)
+}
+
+.modal-content .order-summary__description, .modal__note{
+    color: #83888F !important;
+}
+
+.modal-content .order-summary__description {
+    font-size: 1.2rem;
+}
+
+.modal__note {
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+
+.modal__checkout {
+    width: 80%;
+}
+
+.order-summary {
+    background-image: url('../../assets/images/plan/mobile/bg-order-summary.png');
+}
+
+.order-summary__title {
+    font-size: .95rem;
+}
+
+.order-summary__description {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    word-spacing: 5px;
+}
+
+.order-summary__description--highlight {
+    color: #0E8784 !important
+}
+
+.order-summary__link {
+    width: 70%;
+}
+
+@media screen and (min-width: 576px) {
+    .subscription-hero {
+        background-image: url('../../assets/images/plan/tablet/image-hero-blackcup.jpg'), linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
+    }
+
+    .order-summary {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+
+    .order-summary__description {
+        font-size: 1.3rem !important;
+    }
+
+    .order-summary__link {
+        width: 40%;
+    }
+
+    .modal__price {
+        font-size: 1.2rem;
+    }
+
+    .modal__checkout {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .subscription-hero {
+        background-image: url('../../assets/images/plan/desktop/image-hero-blackcup.jpg'), linear-gradient(to left, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
+    }
+
+    .order-summary {
+        background-image: url('../../assets/images/plan/desktop/bg-order-summary.png');
+    }
+
+    .order-summary__link {
+        font-size: 1rem !important;
+    }
+
+    .modal__header, .modal__body {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .order-summary__link {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .coffee-filter {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
