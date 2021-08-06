@@ -3,7 +3,7 @@
 ## Welcome! 👋
 I am doing this challenge from Frontend Mentor, the challenge is to build out a multi-page coffee subscription website and get it looking as close to the design as possible.
 To accomplish this task i am using react-bootstrap and react router dom for page navigation.
-This app is live on https://pro-coffeeroasters.com.netlify.app
+This app is live on https://pro-coffeeroasters.netlify.app
 
 At end my users should be able to:
 
