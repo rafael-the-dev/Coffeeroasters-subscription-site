@@ -5,7 +5,7 @@ import './styles.css';
 import { Container, Row, Col, Modal } from 'react-bootstrap';
 import Instructions from '../../components/Instructions';
 import ToggleButton from '../../components/ToggleButton';
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import PlanCard from '../../components/PlanCard';
 import TabButton from '../../components/TabButton';
 import { useHistory, useLocation } from 'react-router-dom';
@@ -56,6 +56,8 @@ const Subscription = () => {
     const [ coffeeDeliveyFrequency, setCoffeeDeliveyFrequency ] = useState('every week');
 
     const history = useHistory();
+
+    const planMainRef = useRef(null);
 
     const coffeeFrequencyButtonRef = React.createRef();
 
@@ -315,8 +317,8 @@ const Subscription = () => {
 
     return (
         <>
-            <Header />
-            <Container fluid as="main" className="main">
+            <Header mainRef={planMainRef} />
+            <Container fluid as="main" ref={planMainRef} className="main">
                 { heroMemo }
                 { stepsMemo }
                 <Container as="section" fluid className="mt-5 py-4 coffee-filter">

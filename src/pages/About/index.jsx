@@ -8,16 +8,19 @@ import { useEffect } from 'react';
 import Hero from '../../components/Hero';
 import P from '../../components/P';
 import { H1, H2 } from '../../components/Heading';
+import { useRef } from 'react';
 
 const About = () => {
+    const aboutMainRef = useRef(null);
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [ ]);
 
     return (
         <>
-            <Header />
-            <Container fluid as="main" className="main" >
+            <Header mainRef={aboutMainRef} />
+            <Container fluid as="main" ref={aboutMainRef} className="main" > 
                 <Hero className="about-hero">
                     <H1 className="default-hero__title">About us</H1>
                     <P

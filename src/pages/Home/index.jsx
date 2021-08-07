@@ -6,21 +6,23 @@ import CollectionCard from '../../components/CollectionCard';
 import ServiceCard from '../../components/ServiceCard';
 import Footer from '../../components/Footer';
 import Instructions from '../../components/Instructions';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Hero from '../../components/Hero';
 import P from '../../components/P';
 import { H1, H2 } from '../../components/Heading';
 import LinkButton from '../../components/LinkButton';
 
 const Home = () => {
+    const homeMainRef = useRef(null);
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [ ]);
     
     return (
         <>
-            <Header />
-            <Container as="main" fluid className="main">
+            <Header  mainRef={homeMainRef} />
+            <Container as="main" ref={homeMainRef} fluid className="main">
                 <Hero className="home-hero">
                     <H1 className="default-hero__title display-1 home-hero__title">Great coffee<br/>made simple</H1>
                     <P
