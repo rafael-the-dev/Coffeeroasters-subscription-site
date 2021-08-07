@@ -12,6 +12,7 @@ import { useHistory, useLocation } from 'react-router-dom';
 import Hero from '../../components/Hero';
 import P from '../../components/P';
 import { H1 } from '../../components/Heading';
+import LinkButton from '../../components/LinkButton';
 
 const CoffeeFrequency = React.forwardRef(({ firstCard, secondCard, thirdCard, value, setValue, buttonText, containerId }, ref) => {
     const buttonMemo = useMemo(() => (
@@ -282,12 +283,10 @@ const Subscription = () => {
                 </Modal.Body>
                 <Modal.Footer className="d-flex align-item-center justify-content-center">
                     <span className="d-none d-sm-block font-weight-9 font-fraunces modal__price">${ getTotalPrice().toFixed(2) } / mo</span>
-                    <button className="text-white font-weight-9 py-2 mt-2 rounded-3 font-fraunces secondary-bg border-0 
-                        modal__checkout"
-                        onClick={() => history.push('/')}>
+                    <LinkButton className="mt-2 modal__checkout" onClick={() => history.push('/')}>
                         <span className="d-sm-none">Checkout - ${ getTotalPrice().toFixed(2) } / <sub className="modal__sub">mo</sub></span>
                         <span className="d-none d-sm-block">Create my plan</span>
-                    </button>
+                    </LinkButton>
                 </Modal.Footer>
             </Modal>
         );
@@ -338,11 +337,7 @@ const Subscription = () => {
                                     <h2 className="text-start text-uppercase text-white opacity-8 mb-3 order-summary__title">Order summary</h2>
                                     { getSummaryText() }
                                 </div>
-                                <button className="text-white font-weight-9 py-2 mt-5 rounded-3 font-fraunces secondary-bg border-0 
-                                    align-self-md-end order-summary__link"
-                                    onClick={createAPlan}>
-                                    Create my plan
-                                </button>
+                                <LinkButton className="mt-5 align-self-md-end order-summary__link" onClick={createAPlan} />
                             </Container>
                         </Col>
                     </Row>

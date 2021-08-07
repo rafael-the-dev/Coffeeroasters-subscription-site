@@ -1,14 +1,15 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import InstructionCard from '../../components/InstructionCard';
-import { Link } from 'react-router-dom';
 import './styles.css';
+import LinkButton from '../LinkButton';
+import { H2 } from '../Heading';
 
 const Instructions = ({ title, url, isSubscriptionPage }) => {
     return (
         <Container as="section" fluid className={`py-5 align-items-sm-start align-items-center position-relative d-flex flex-column instructions
             ${isSubscriptionPage ? 'bg-steps rounded-3' : '' }`}>
             {
-                title ? <h2 className="text-center font-weight-9 mb-3 opacity-9 font-fraunces instructions__title">{ title }</h2> : ''
+                title ? <H2 className="mb-3 instructions__title" >{ title }</H2> : ''
             }
             <Row className="mt-5 w-100 line-container">
                 <Col sm={4} className="position-relative">
@@ -46,10 +47,7 @@ const Instructions = ({ title, url, isSubscriptionPage }) => {
                 </Col>
             </Row>
             {
-                url ? (<Link to={url} className="text-white font-weight-9 rounded-3 mt-3 text-center font-fraunces instructions__link">
-                    Create your plan
-                    </Link>)
-                    : ''
+                url ? (<LinkButton url={url} className="mt-3 instructions__link" />) : ''
             }
             
         </Container>

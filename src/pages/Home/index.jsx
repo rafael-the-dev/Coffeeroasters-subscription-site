@@ -1,5 +1,4 @@
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import granEspressoImage from '../../assets/images/home/image-gran-espresso.png';
 import './styles.css';
@@ -11,6 +10,7 @@ import { useEffect } from 'react';
 import Hero from '../../components/Hero';
 import P from '../../components/P';
 import { H1, H2 } from '../../components/Heading';
+import LinkButton from '../../components/LinkButton';
 
 const Home = () => {
     useEffect(() => {
@@ -28,10 +28,7 @@ const Home = () => {
                         coffees from our best roasters delivered directly to your door, at your schedule." 
                         className="opacity-75 mt-4 home-hero__description text-white text-center default-hero__description"
                     />
-                    <Link to="/plan" className="text-white mt-5 d-block text-center font-fraunces rounded-3 text-decoration-none 
-                        home-hero__link">
-                        Create your plan
-                    </Link>
+                    <LinkButton url="/plan" className="mt-5 d-block home-hero__link" />
                 </Hero>
                 <Container as="section" fluid className="py-5 collections">
                     <H2 className="collection__title">our collection</H2>
