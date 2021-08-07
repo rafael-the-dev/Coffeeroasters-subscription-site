@@ -18,7 +18,7 @@
 .modal-content {
     background-color: #FEFCF7;
     width: 90%;
-    margin: 16vh auto 0 auto;
+    margin: 10vh auto 0 auto;
 }
 
 .modal__header, .modal__body {
@@ -52,6 +52,7 @@
 }
 
 .modal__checkout {
+    font-size: .9rem;
     width: 80%;
 }
 
@@ -95,11 +96,16 @@
         width: 40%;
     }
 
+    .modal-content {
+        margin: 16vh auto 0 auto;
+    }
+
     .modal__price {
         font-size: 1.2rem;
     }
 
     .modal__checkout {
+        font-size: .95rem;
         width: 60%;
     }
 }
@@ -117,9 +123,17 @@
         font-size: 1rem !important;
     }
 
+    .modal-content {
+        margin: 20vh auto 0 auto;
+    }
+
     .modal__header, .modal__body {
         padding-left: 7%;
         padding-right: 7%;
+    }
+
+    .modal__checkout {
+        font-size: 1rem;
     }
 }
 
@@ -127,11 +141,19 @@
     .order-summary__link {
         width: 30%;
     }
+
+    .modal-content {
+        margin: 25vh auto 0 auto;
+    }
 }
 
 @media screen and (min-width: 1400px) {
     .coffee-filter {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .modal-content {
+        margin: 30vh auto 0 auto;
     }
 }

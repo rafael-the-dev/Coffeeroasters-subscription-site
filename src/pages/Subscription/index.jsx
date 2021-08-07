@@ -278,10 +278,10 @@ const Subscription = () => {
                 </Modal.Header>
                 <Modal.Body>
                     { getSummaryText() }
-                    <p className="text-start modal__note">
-                        Is this correct? You can proceed to checkout or go back to plan selection if 
-                        something is off. Subscription discount codes can also be redeemed at the checkout. 
-                    </p>
+                    <P 
+                        className="text- text-sm-start mt-3 modal__note" 
+                        text="Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. " 
+                    />
                 </Modal.Body>
                 <Modal.Footer className="d-flex align-item-center justify-content-center">
                     <span className="d-none d-sm-block font-weight-9 font-fraunces modal__price">${ getTotalPrice().toFixed(2) } / mo</span>

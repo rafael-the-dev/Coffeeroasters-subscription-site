@@ -22,15 +22,15 @@
     .address-card__title::before {
         margin-left: 0;
     }
-
-    .address-card__description {
-        font-size: 1.05rem;
-    }
 }
 
 @media screen and (min-width: 992px) { 
     .address-card__title::before {
         width: 15%;
+    }
+
+    .address-card__description {
+        font-size: 1rem;
     }
 }
 
