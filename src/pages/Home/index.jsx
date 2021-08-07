@@ -1,6 +1,9 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import Header from '../../components/Header';
 import granEspressoImage from '../../assets/images/home/image-gran-espresso.png';
+import planaltoImage from '../../assets/images/home/image-planalto.png';
+import picolloImage from '../../assets/images/home/image-piccollo.png';
+import dancheImage from '../../assets/images/home/image-danche.png';
 import './styles.css';
 import CollectionCard from '../../components/CollectionCard';
 import ServiceCard from '../../components/ServiceCard';
@@ -44,23 +47,23 @@ const Home = () => {
                         </Col>
                         <Col xs={12} md={6} lg={3}>
                             <CollectionCard
-                                image={granEspressoImage}
-                                title="Gran Expresso" 
-                                description="Light and flavorful blend with cocoa and black pepper for an intense experience"
+                                image={planaltoImage}
+                                title="Planalto" 
+                                description="Brazilian dark roast with rich and velvety body, and hints of fruits and nuts"
                             />
                         </Col>
                         <Col xs={12} md={6} lg={3}>
                             <CollectionCard
-                                image={granEspressoImage}
-                                title="Gran Expresso" 
-                                description="Light and flavorful blend with cocoa and black pepper for an intense experience"
+                                image={picolloImage}
+                                title="Piccollo" 
+                                description="Mild and smooth blend featuring notes of toasted almond and dried cherry "
                             />
                         </Col>
                         <Col xs={12} md={6} lg={3}>
                             <CollectionCard
-                                image={granEspressoImage}
-                                title="Gran Expresso" 
-                                description="Light and flavorful blend with cocoa and black pepper for an intense experience"
+                                image={dancheImage}
+                                title="Danche" 
+                                description="Ethiopian hand-harvested blend densely packed with vibrant fruit notes"
                             />
                         </Col>
                     </Row>
