@@ -7,7 +7,7 @@ import AddressCard from '../../components/AddressCard';
 import { useEffect } from 'react';
 import Hero from '../../components/Hero';
 import P from '../../components/P';
-import { H1 } from '../../components/Heading';
+import { H1, H2 } from '../../components/Heading';
 
 const About = () => {
     useEffect(() => {
@@ -30,7 +30,7 @@ const About = () => {
                 <Container fluid as="section" className="mt-5 commitment align-items-sm-center d-sm-flex flex-sm-row">
                     <Container fluid className="bg-cover rounded-3 bg-center bg-no-repeat commitment__image"></Container>
                     <Container fluid className="mt-5 commitment__content">
-                        <h2 className=" font-weight-9 opacity-9 about-title text-center font-fraunces commitment__title">Our commitment</h2>
+                        <H2 className="about-title text-black commitment__title">Our commitment</H2>
                         <P 
                             text="We’re built on a simple mission and a commitment to doing good along the way. We want to make it 
                                 easy for you to discover and brew the world’s best coffee at home. It all starts at the source. 
@@ -48,8 +48,8 @@ const About = () => {
                     <Container fluid className="bg-cover rounded-3 bg-center bg-no-repeat position-absolute
                         top-0 start-50 translate-middle uncompromising__image"></Container>
                     <Container fluid className="mt-5 text-white py-4 uncompromising__content">
-                        <h2 className=" font-weight-9 opacity-9 text-center font-fraunces about-title  uncompromising__title">
-                            Uncompromising quality</h2>
+                        <H2 className="about-title  uncompromising__title">
+                            Uncompromising quality</H2>
                         <P 
                             text="Although we work with growers who pay close attention to all stages of harvest and processing, we employ, 
                             on our end, a rigorous quality control program to avoid over-roasting or baking the coffee dry. Every bag 
@@ -60,7 +60,7 @@ const About = () => {
                     </Container>
                 </Container>
                 <Container fluid as="section"  className="headquartes mt-5 pt-5">
-                    <h2 className="font-weight-9  opacity-9 text-center font-fraunces headquartes__title">Our headquarters</h2>
+                    <H2 className="text-black headquartes__title">Our headquarters</H2>
                     <Row className="mt-4">
                         <Col xs={12} sm={4} className="headquartes__column">
                             <AddressCard

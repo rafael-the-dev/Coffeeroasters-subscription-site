@@ -10,7 +10,7 @@ import Instructions from '../../components/Instructions';
 import { useEffect } from 'react';
 import Hero from '../../components/Hero';
 import P from '../../components/P';
-import { H1 } from '../../components/Heading';
+import { H1, H2 } from '../../components/Heading';
 
 const Home = () => {
     useEffect(() => {
@@ -34,7 +34,7 @@ const Home = () => {
                     </Link>
                 </Hero>
                 <Container as="section" fluid className="py-5 collections">
-                    <h2 className="text-center font-weight-9 font-fraunces collection__title">our collection</h2>
+                    <H2 className="collection__title">our collection</H2>
                     <Row className="mt-3">
                         <Col xs={12} md={6} lg={3}>
                             <CollectionCard
@@ -67,7 +67,7 @@ const Home = () => {
                     </Row>
                 </Container>
                 <Container as="section" fluid className="py-5 rounded-3 text-white position-relative services">
-                    <h2 className="text-center font-weight-9 font-fraunces services__title">Why choose us?</h2>
+                    <H2 className="services__title">Why choose us?</H2>
                     <P 
                         text="A large part of our role is choosing which particular coffees will be featured  in our range. 
                             This means working closely with the best coffee growers to give you a more impactful 
