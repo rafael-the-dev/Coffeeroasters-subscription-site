@@ -1,0 +1,51 @@
+.default-hero {
+    height: 78vh;
+}
+
+.default-hero__description {
+    font-size: .91rem;
+    line-height: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+@media screen and (min-width: 576px) { 
+    .default-hero__title, .default-hero__description {
+        text-align: left !important;
+    }
+
+    .default-hero {
+        padding-left: 5%;
+        height: 440px;
+    }
+
+    .default-hero__content {
+        width: 70%;
+    }
+
+    .default-hero__description {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 992px) { 
+    .default-hero {
+        height: 470px;
+    }
+
+    .default-hero__content {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px) { 
+    .default-hero {
+        height: 520px;
+    }
+
+    .default-hero__content {
+        width: 32%;
+    }
+}

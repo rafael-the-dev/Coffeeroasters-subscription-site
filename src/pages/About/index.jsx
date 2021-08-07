@@ -5,6 +5,9 @@ import './styles.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import AddressCard from '../../components/AddressCard';
 import { useEffect } from 'react';
+import Hero from '../../components/Hero';
+import P from '../../components/P';
+import { H1 } from '../../components/Heading';
 
 const About = () => {
     useEffect(() => {
@@ -15,17 +18,15 @@ const About = () => {
         <>
             <Header />
             <Container fluid as="main" className="main" >
-                <Container fluid as="section" className="default-hero bg-cover rounded-3 bg-center bg-no-repeat d-flex
-                    align-items-center justify-content-center justify-content-sm-start hero">
-                    <div className="d-block default-hero__content">
-                        <h1 className="default-hero__title font-weight-9 opacity-9 text-center font-fraunces text-white">About us</h1>
-                        <p className="opacity-9 text-white text-center default-hero__description">
-                            Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from 
+                <Hero className="about-hero">
+                    <H1 className="default-hero__title">About us</H1>
+                    <P
+                        text="Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from 
                             around the world. We have since been dedicated to bring the perfect cup - from bean to brew -
-                            in every shipment.
-                        </p>
-                    </div>
-                </Container>
+                            in every shipment." 
+                        className="text-white text-center default-hero__description"
+                    />
+                </Hero>
                 <Container fluid as="section" className="mt-5 commitment align-items-sm-center d-sm-flex flex-sm-row">
                     <Container fluid className="bg-cover rounded-3 bg-center bg-no-repeat commitment__image"></Container>
                     <Container fluid className="mt-5 commitment__content">

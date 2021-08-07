@@ -9,6 +9,9 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import PlanCard from '../../components/PlanCard';
 import TabButton from '../../components/TabButton';
 import { useHistory, useLocation } from 'react-router-dom';
+import Hero from '../../components/Hero';
+import P from '../../components/P';
+import { H1 } from '../../components/Heading';
 
 const CoffeeFrequency = React.forwardRef(({ firstCard, secondCard, thirdCard, value, setValue, buttonText, containerId }, ref) => {
     const buttonMemo = useMemo(() => (
@@ -174,17 +177,17 @@ const Subscription = () => {
      const stepsMemo = useMemo(() => <Instructions isSubscriptionPage />, [ ]);
      const footerMemo = useMemo(() => <Footer />, [ ]);
      const heroMemo = useMemo(() => {
-        return <Container fluid id="plan-hero" as="section" className="default-hero bg-cover rounded-3 bg-center bg-no-repeat d-flex
-            align-items-center justify-content-center justify-content-sm-start subscription-hero">
-            <div className="d-block default-hero__content">
-                <h1 className="default-hero__title font-weight-9 opacity-9 text-center font-fraunces text-white">About us</h1>
-                <p className="opacity-9 text-white text-center default-hero__description">
-                    Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from 
-                    around the world. We have since been dedicated to bring the perfect cup - from bean to brew -
-                    in every shipment.
-                </p>
-            </div>
-        </Container>
+        return (
+            <Hero className="subscription-hero">
+                <H1 className="default-hero__title">Create a plan</H1>
+                <P
+                    text="Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from 
+                        around the world. We have since been dedicated to bring the perfect cup - from bean to brew -
+                        in every shipment." 
+                    className="text-white text-center default-hero__description"
+                />
+            </Hero>
+        );
      }, [ ]);
 
      const tabsMemo = useMemo(() => {

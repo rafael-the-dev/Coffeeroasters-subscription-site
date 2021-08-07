@@ -1,4 +1,4 @@
-.hero {
+.about-hero {
     background-image: url('../../assets/images/about/mobile/image-hero-whitecup.jpg'),  linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
 }
 
@@ -9,11 +9,6 @@
 
 .about-title {
     font-size: 1.8rem;
-}
-
-.about-description {
-    font-size: .95rem;
-    line-height: 1.7rem;
 }
 
 .uncompromising {
@@ -45,7 +40,7 @@
 }
 
 @media screen and (min-width: 576px) {
-    .hero {
+    .about-hero {
         background-image: url('../../assets/images/about/tablet/image-hero-whitecup.jpg'),  linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
     }
 
@@ -91,7 +86,7 @@
         padding-right: 1.5%;
     }
 
-    .hero {
+    .about-hero {
         background-image: url('../../assets/images/about/desktop/image-hero-whitecup.jpg'),  linear-gradient(to left, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6));
     }
 

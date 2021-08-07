@@ -8,6 +8,9 @@ import ServiceCard from '../../components/ServiceCard';
 import Footer from '../../components/Footer';
 import Instructions from '../../components/Instructions';
 import { useEffect } from 'react';
+import Hero from '../../components/Hero';
+import P from '../../components/P';
+import { H1 } from '../../components/Heading';
 
 const Home = () => {
     useEffect(() => {
@@ -18,22 +21,18 @@ const Home = () => {
         <>
             <Header />
             <Container as="main" fluid className="main">
-                <Container as="section" fluid className="rounded-3 bg-cover bg-no-repeat bg-center home-hero d-flex align-items-center
-                ">
-                    <div className="d-flex flex-column justify-center text-white align-items-center
-                        align-items-sm-start text-center home-hero__content" >
-                        <h1 className="display-1 font-weight-9 font-fraunces home-hero__title">
-                            Great coffee<br/>made simple
-                        </h1>
-                        <p className="opacity-75 mt-3 home-hero__description">
-                            Start your mornings with the world’s best coffees. Try our expertly curated artisan 
-                            coffees from our best roasters delivered directly to your door, at your schedule.
-                        </p>
-                        <Link to="/plan" className="text-white mt-5 font-fraunces rounded-3 text-decoration-none  home-hero__link">
-                            Create your plan
-                        </Link>
-                    </div>
-                </Container>
+                <Hero className="home-hero">
+                    <H1 className="default-hero__title display-1 home-hero__title">Great coffee<br/>made simple</H1>
+                    <P
+                        text="Start your mornings with the world’s best coffees. Try our expertly curated artisan 
+                        coffees from our best roasters delivered directly to your door, at your schedule." 
+                        className="opacity-75 mt-3 home-hero__description text-white text-center default-hero__description"
+                    />
+                    <Link to="/plan" className="text-white mt-5 d-block text-center font-fraunces rounded-3 text-decoration-none 
+                        home-hero__link">
+                        Create your plan
+                    </Link>
+                </Hero>
                 <Container as="section" fluid className="py-5 collections">
                     <h2 className="text-center font-weight-9 font-fraunces collection__title">our collection</h2>
                     <Row className="mt-3">

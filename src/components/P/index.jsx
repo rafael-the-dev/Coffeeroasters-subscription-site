@@ -2,7 +2,7 @@ import './styles.css';
 
 const P = ({ text, className}) => {
     return (
-        <p className={`text-center p ${className}`}>{ text }</p>
+        <p className={`text-center opacity-9 p ${className}`}>{ text }</p>
     );
 };
 
