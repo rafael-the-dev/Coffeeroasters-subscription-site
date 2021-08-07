@@ -26,7 +26,7 @@ const Home = () => {
                     <P
                         text="Start your mornings with the world’s best coffees. Try our expertly curated artisan 
                         coffees from our best roasters delivered directly to your door, at your schedule." 
-                        className="opacity-75 mt-3 home-hero__description text-white text-center default-hero__description"
+                        className="opacity-75 mt-4 home-hero__description text-white text-center default-hero__description"
                     />
                     <Link to="/plan" className="text-white mt-5 d-block text-center font-fraunces rounded-3 text-decoration-none 
                         home-hero__link">
@@ -68,11 +68,12 @@ const Home = () => {
                 </Container>
                 <Container as="section" fluid className="py-5 rounded-3 text-white position-relative services">
                     <h2 className="text-center font-weight-9 font-fraunces services__title">Why choose us?</h2>
-                    <p className="mt-4 text-center services__description">
-                        A large part of our role is choosing which particular coffees will be featured  in our range. 
-                        This means working closely with the best coffee growers to give you a more impactful 
-                        experience on every level.
-                    </p>
+                    <P 
+                        text="A large part of our role is choosing which particular coffees will be featured  in our range. 
+                            This means working closely with the best coffee growers to give you a more impactful 
+                            experience on every level."
+                        className="mt-4 text-center services__description"
+                    />
                     <Row className="mt-5">
                         <Col xs={12} md={4} className="services__column">
                             <ServiceCard

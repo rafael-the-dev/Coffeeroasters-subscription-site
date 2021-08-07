@@ -8,7 +8,7 @@
 
 .default-hero__description {
     font-size: .91rem;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 }
 
 @media screen and (min-width: 576px) { 
@@ -40,8 +40,10 @@
     .default-hero {
         height: 520px;
     }
+}
 
+@media screen and (min-width: 1400px) { 
     .default-hero__content {
-        width: 32%;
+        width: 35%;
     }
 }
